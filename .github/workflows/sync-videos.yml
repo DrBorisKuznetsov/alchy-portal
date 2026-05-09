@@ -1,0 +1,42 @@
+name: Sync YouTube Videos
+
+on:
+  schedule:
+    - cron: '0 0 * * 0' # Каждое воскресенье в полночь
+  workflow_dispatch: # Позволяет запускать вручную
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Fetch latest videos
+        env:
+          YT_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+        run: npx tsx scripts/fetch-videos.ts $YT_API_KEY
+
+      - name: Commit and push changes
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add src/data/*.json
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "chore: auto-sync youtube data [skip ci]"
+            git push
+          fi
