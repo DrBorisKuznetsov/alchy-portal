@@ -125,6 +125,9 @@
 /* YouTube Button */
 .header__yt-btn {
   flex-shrink: 0;
+  position: relative;
+  z-index: 10;
+  pointer-events: auto;
 }
 
 /* Mobile Toggle */
