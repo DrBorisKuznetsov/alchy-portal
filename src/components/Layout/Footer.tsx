@@ -69,7 +69,7 @@ export default function Footer() {
                 <Code2 size={18} />
               </a>
               <a
-                href="mailto:contact@alchy.dev"
+                href="mailto:alchy.office@gmail.com"
                 className="footer__social-link"
                 aria-label="Email"
               >
