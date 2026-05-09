@@ -9,7 +9,8 @@ import {
   AreaChart,
   Area
 } from 'recharts';
-import { Info, Share2, Zap, Send, Link as LinkIcon, Check, X } from 'lucide-react';
+import { motion } from 'framer-motion';
+import { Info, Zap, Send, Link as LinkIcon, Check, X } from 'lucide-react';
 import './Calculator.css';
 
 const UNITS = {
@@ -38,7 +39,7 @@ export default function RCFilter() {
     const url = window.location.href;
     navigator.clipboard.writeText(url);
     setCopied(true);
-    setTimeout(() => setCopied(null), 2000);
+    setTimeout(() => setCopied(false), 2000);
   };
 
   const handleTgShare = () => {
