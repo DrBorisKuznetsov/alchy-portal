@@ -1,0 +1,12 @@
+/* Layout.css */
+
+.layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.layout__main {
+  flex: 1;
+  padding-top: var(--header-height);
+}
