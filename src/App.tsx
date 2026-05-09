@@ -6,6 +6,7 @@ import SeriesPage from './pages/SeriesPage';
 import About from './pages/About';
 import Sponsors from './pages/Sponsors';
 import Tools from './pages/Tools';
+import News from './pages/News';
 import NotFound from './pages/NotFound';
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/sponsors" element={<Sponsors />} />
           <Route path="/tools" element={<Tools />} />
+          <Route path="/news" element={<News />} />
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>

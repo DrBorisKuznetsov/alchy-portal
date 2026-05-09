@@ -12,6 +12,7 @@ import {
   ExternalLink,
   Zap,
   Home,
+  Newspaper,
 } from 'lucide-react';
 import logo from '../../assets/logo.png';
 import './Header.css';
@@ -21,8 +22,8 @@ const navItems = [
   { path: '/catalog', label: 'Каталог', icon: BookOpen },
   { path: '/series', label: 'Серии', icon: Layers },
   { path: '/tools', label: 'Инструменты', icon: Zap },
+  { path: '/news', label: 'Новости', icon: Newspaper },
   { path: '/about', label: 'О канале', icon: User },
-  { path: '/sponsors', label: 'Спонсорам', icon: Handshake },
 ];
 
 export default function Header() {
