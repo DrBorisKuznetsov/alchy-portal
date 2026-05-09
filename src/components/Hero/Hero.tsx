@@ -54,7 +54,7 @@ export default function Hero() {
             transition={{ delay: 0.4, duration: 0.5 }}
           >
             <a
-              href="https://www.youtube.com/@ALCHY_CHANNAL"
+              href="https://www.youtube.com/@ALCHY_CHANNEL"
               target="_blank"
               rel="noopener noreferrer"
               className="btn btn-primary btn-lg hero__cta-primary"

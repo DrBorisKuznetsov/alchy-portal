@@ -81,7 +81,7 @@ export default function Header() {
 
         {/* YouTube Button */}
         <a
-          href="https://www.youtube.com/@ALCHY_CHANNAL"
+          href="https://www.youtube.com/@ALCHY_CHANNEL"
           target="_blank"
           rel="noopener noreferrer"
           className="btn btn-primary btn-sm header__yt-btn hide-mobile"
@@ -129,7 +129,7 @@ export default function Header() {
                 );
               })}
               <a
-                href="https://www.youtube.com/@ALCHY_CHANNAL"
+                href="https://www.youtube.com/@ALCHY_CHANNEL"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="header__mobile-link header__mobile-link--yt"

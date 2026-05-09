@@ -11,7 +11,7 @@
  */
 
 const API_BASE = 'https://www.googleapis.com/youtube/v3';
-const CHANNEL_HANDLE = '@ALCHY_CHANNAL';
+const CHANNEL_HANDLE = '@ALCHY_CHANNEL';
 
 // ─── Types ───────────────────────────────────────────────
 
