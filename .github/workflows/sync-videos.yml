@@ -24,19 +24,22 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Fetch latest videos
+      - name: Fetch Data (YouTube, News, Blog)
         env:
-          YT_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
-        run: npx tsx scripts/fetch-videos.ts $YT_API_KEY
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+        run: |
+          npx tsx scripts/fetch-videos.ts $YOUTUBE_API_KEY
+          npx tsx scripts/fetch-news.ts
+          npx tsx scripts/generate-blog-index.ts
 
       - name: Commit and push changes
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add src/data/*.json
+          git add src/data/*.json src/data/blog/*.md
           if git diff --staged --quiet; then
             echo "No changes to commit"
           else
-            git commit -m "chore: auto-sync youtube data [skip ci]"
+            git commit -m "chore: automated weekly data sync [skip ci]"
             git push
           fi
