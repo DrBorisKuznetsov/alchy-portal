@@ -11,12 +11,13 @@ import {
   Handshake,
   ExternalLink,
   Zap,
+  Home,
 } from 'lucide-react';
 import logo from '../../assets/logo.png';
 import './Header.css';
 
 const navItems = [
-  { path: '/', label: 'Главная', icon: Cpu },
+  { path: '/', label: 'Главная', icon: Home },
   { path: '/catalog', label: 'Каталог', icon: BookOpen },
   { path: '/series', label: 'Серии', icon: Layers },
   { path: '/tools', label: 'Инструменты', icon: Zap },
