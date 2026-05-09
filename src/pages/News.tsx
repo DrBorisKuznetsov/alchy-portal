@@ -85,6 +85,7 @@ export default function News() {
                     <span>{item.source}</span>
                   </div>
                   <h4 className="news-item__title">{item.title}</h4>
+                  <p className="news-item__summary">{item.summary}</p>
                   <p className="news-item__date">
                     {new Date(item.pubDate).toLocaleDateString('ru-RU')}
                   </p>
