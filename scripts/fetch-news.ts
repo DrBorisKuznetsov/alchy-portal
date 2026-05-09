@@ -1,68 +1,63 @@
 import Parser from 'rss-parser';
 import fs from 'fs';
 import path from 'path';
+import { GoogleGenerativeAI } from '@google/generative-ai';
 
 const parser = new Parser();
+const genAI = new GoogleGenerativeAI(process.env.YOUTUBE_API_KEY || '');
+const model = genAI.getGenerativeModel({ model: 'gemini-1.5-flash' });
 
 const FEEDS = [
   { name: 'Habr Схемотехника', url: 'https://habr.com/ru/rss/hub/electronics/all/' },
-  { name: 'Habr Железо', url: 'https://habr.com/ru/rss/hub/hardware/all/' },
   { name: 'Hackaday', url: 'https://hackaday.com/blog/feed/' },
   { name: 'Electronics Weekly', url: 'https://www.electronicsweekly.com/news/feed/' }
 ];
 
-// Ключевые слова для фильтрации "мусора"
-const STOP_WORDS = [
-  'iphone', 'samsung', 'xiaomi', 'смартфон', 'игра', 'game', 'crypto', 'криптовалюта',
-  'nft', 'акции', 'market', 'биржа', 'смарт-часы', 'ноутбук'
-];
+async function processWithAI(newsItems: any[]) {
+  const prompt = `
+    Ты — инженер-электронщик. Переведи список новостей на технический русский язык.
+    Удали мусор (гаджеты, смартфоны, общие IT-новости). 
+    Оставь только: микроконтроллеры, схемотехника, PCB, силовая электроника.
+    Верни строго JSON: [{"title": "Русский заголовок", "link": "url", "source": "source", "pubDate": "date"}]
+    
+    Новости:
+    ${JSON.stringify(newsItems.map(n => ({ title: n.title, link: n.link, source: n.source, date: n.pubDate })))}
+  `;
 
-const KEEP_WORDS = [
-  'mcu', 'stm32', 'esp32', 'pcb', 'pcap', 'adc', 'dac', 'analog', 'fpga', 'risc-v',
-  'chip', 'semiconductor', 'power', 'sensor', 'датчик', 'контроллер', 'схема'
-];
+  try {
+    const result = await model.generateContent(prompt);
+    const text = result.response.text();
+    const jsonMatch = text.match(/\[.*\]/s);
+    return jsonMatch ? JSON.parse(jsonMatch[0]) : [];
+  } catch (e) {
+    console.error('AI Error:', e);
+    // Если ИИ упал, возвращаем оригиналы (хотя бы Habr будет на русском)
+    return newsItems.map(n => ({ title: n.title, link: n.link, source: n.source, pubDate: n.pubDate }));
+  }
+}
 
 async function fetchNews() {
-  console.log('📡 Сбор и фильтрация инженерных новостей...');
-  let allNews: any[] = [];
+  console.log('📡 Запуск ИИ-перевода новостей на сервере...');
+  let rawNews: any[] = [];
 
   for (const feed of FEEDS) {
     try {
-      console.log(`🔍 Скачиваю ${feed.name}...`);
       const data = await parser.parseURL(feed.url);
-      
-      const filteredItems = data.items.filter(item => {
-        const title = item.title?.toLowerCase() || '';
-        // Убираем мусор
-        const hasStopWord = STOP_WORDS.some(word => title.includes(word));
-        if (hasStopWord) return false;
-        
-        // Если это западный источник, проверяем наличие инженерных терминов
-        if (feed.name === 'Hackaday' || feed.name === 'Electronics Weekly') {
-           return KEEP_WORDS.some(word => title.includes(word)) || title.length > 50;
-        }
-        
-        return true;
-      });
-
-      allNews = [...allNews, ...filteredItems.map(i => ({
-        title: i.title,
-        link: i.link,
-        source: feed.name,
-        pubDate: i.pubDate,
-        lang: (feed.name.includes('Habr') ? 'ru' : 'en')
-      }))];
-    } catch (e) {
-      console.error(`❌ Ошибка ${feed.name}:`, e);
-    }
+      rawNews = [...rawNews, ...data.items.slice(0, 10).map(i => ({ ...i, source: feed.name }))];
+    } catch (e) {}
   }
 
-  allNews.sort((a, b) => new Date(b.pubDate).getTime() - new Date(a.pubDate).getTime());
+  const BATCH_SIZE = 10;
+  let processedNews: any[] = [];
+  for (let i = 0; i < rawNews.length; i += BATCH_SIZE) {
+    const batch = rawNews.slice(i, i + BATCH_SIZE);
+    const aiResult = await processWithAI(batch);
+    processedNews = [...processedNews, ...aiResult];
+  }
 
   const dataPath = path.join(process.cwd(), 'src', 'data', 'news.json');
-  fs.writeFileSync(dataPath, JSON.stringify(allNews.slice(0, 40), null, 2));
-  
-  console.log(`✅ Лента очищена. Сохранено ${allNews.length} новостей.`);
+  fs.writeFileSync(dataPath, JSON.stringify(processedNews.slice(0, 30), null, 2));
+  console.log(`✅ ИИ обработал ${processedNews.length} новостей.`);
 }
 
 fetchNews();
