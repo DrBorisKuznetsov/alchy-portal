@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import {
-  Cpu, Zap, BookOpen, Users, Eye,
+  Zap, BookOpen, Users, Eye,
   CirclePlay, Code2, Heart, Mail,
   ExternalLink, Award, Target, Lightbulb, Home,
 } from 'lucide-react';

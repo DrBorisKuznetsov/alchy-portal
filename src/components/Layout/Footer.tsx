@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom';
 import {
-  Cpu,
   CirclePlay,
   Code2,
   Mail,
