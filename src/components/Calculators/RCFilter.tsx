@@ -163,7 +163,7 @@ export default function RCFilter() {
                 <Tooltip 
                   contentStyle={{ backgroundColor: 'var(--card-bg)', border: '1px solid var(--border-color)', borderRadius: '8px' }}
                   labelStyle={{ color: 'var(--text-main)' }}
-                  formatter={(value: number) => [`${value} дБ`, 'Усиление']}
+                  formatter={(value: any) => [`${value} дБ`, 'Усиление']}
                   labelFormatter={(label) => {
                     const d = chartData.find(i => i.frequency === label);
                     return d ? d.label : label;
