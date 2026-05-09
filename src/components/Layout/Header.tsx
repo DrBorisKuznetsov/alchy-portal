@@ -8,7 +8,6 @@ import {
   BookOpen,
   Layers,
   User,
-  Handshake,
   ExternalLink,
   Zap,
   Home,
