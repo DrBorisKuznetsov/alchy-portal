@@ -1,11 +1,11 @@
 import Parser from 'rss-parser';
 import fs from 'fs';
 import path from 'path';
-import { GoogleGenerativeAI } from '@google/generative-ai';
 
-const parser = new Parser();
-const genAI = new GoogleGenerativeAI(process.env.YOUTUBE_API_KEY || '');
-const model = genAI.getGenerativeModel({ model: 'gemini-1.5-flash' });
+// Используем таймаут, чтобы не висеть вечно
+const parser = new Parser({
+  timeout: 10000, 
+});
 
 const FEEDS = [
   { name: 'Analog Devices', url: 'https://www.analog.com/en/about-ad/news-room/press-releases/rss.xml' },
@@ -15,54 +15,39 @@ const FEEDS = [
   { name: 'Habr Схемотехника', url: 'https://habr.com/ru/rss/hub/hardware/all/' }
 ];
 
-async function processWithAI(newsItems: any[]) {
-  const prompt = `
-    Ты — ведущий инженер-электронщик. Твоя задача — составить дайджест для коллег.
-    Перед тобой список статей от Analog Devices, TI, EDN и Habr.
-    
-    1. Переведи заголовок на качественный технический русский.
-    2. Напиши ОДНО предложение-саммари на русском: о чем эта статья (суть).
-    3. Верни строго JSON: [{"title": "Заголовок", "summary": "Суть", "link": "url", "source": "source", "pubDate": "date"}]
-    
-    Список:
-    ${JSON.stringify(newsItems.map(n => ({ title: n.title, link: n.link, source: n.source, date: n.pubDate })))}
-  `;
-
-  try {
-    const result = await model.generateContent(prompt);
-    const text = result.response.text();
-    const jsonMatch = text.match(/\[.*\]/s);
-    return jsonMatch ? JSON.parse(jsonMatch[0]) : [];
-  } catch (e) {
-    console.error('AI Error:', e);
-    return newsItems.map(n => ({ title: n.title, summary: 'Техническая статья', link: n.link, source: n.source, pubDate: n.pubDate }));
-  }
-}
-
 async function fetchNews() {
-  console.log('📡 Сбор глубокого инженерного контента...');
-  let rawNews: any[] = [];
+  console.log('📡 Сбор инженерного контента (Безопасный режим)...');
+  let allNews: any[] = [];
 
   for (const feed of FEEDS) {
     try {
+      console.log(`🔍 Запрос ${feed.name}...`);
       const data = await parser.parseURL(feed.url);
-      rawNews = [...rawNews, ...data.items.slice(0, 8).map(i => ({ ...i, source: feed.name }))];
+      
+      const items = data.items.slice(0, 10).map(i => ({
+        title: i.title || 'Без названия',
+        summary: i.contentSnippet?.slice(0, 150) || 'Техническая статья',
+        link: i.link,
+        source: feed.name,
+        pubDate: i.pubDate,
+        lang: (feed.name.includes('Habr') ? 'ru' : 'en')
+      }));
+      
+      allNews = [...allNews, ...items];
     } catch (e) {
-       console.error(`Error fetching ${feed.name}:`, e);
+      console.error(`⚠️ Пропущен источник ${feed.name} (Таймаут или ошибка)`);
     }
   }
 
-  const BATCH_SIZE = 8;
-  let processedNews: any[] = [];
-  for (let i = 0; i < rawNews.length; i += BATCH_SIZE) {
-    const batch = rawNews.slice(i, i + BATCH_SIZE);
-    const aiResult = await processWithAI(batch);
-    processedNews = [...processedNews, ...aiResult];
-  }
+  allNews.sort((a, b) => new Date(b.pubDate).getTime() - new Date(a.pubDate).getTime());
 
   const dataPath = path.join(process.cwd(), 'src', 'data', 'news.json');
-  fs.writeFileSync(dataPath, JSON.stringify(processedNews.slice(0, 30), null, 2));
-  console.log(`✅ Инженерный дайджест (AD/TI/EDN) готов!`);
+  fs.writeFileSync(dataPath, JSON.stringify(allNews.slice(0, 40), null, 2));
+  
+  console.log(`✅ Данные сохранены. Завершение процесса...`);
+  
+  // ЖЕСТКОЕ ЗАВЕРШЕНИЕ, чтобы не вешать билд
+  process.exit(0);
 }
 
-fetchNews();
+fetchNews().catch(() => process.exit(1));
