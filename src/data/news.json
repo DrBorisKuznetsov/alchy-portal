@@ -1,218 +1,282 @@
 [
   {
+    "title": "История создания промышленных роботов: от игрушки Билла Гриффита Тейлора до разработок Джорджа Девола и Виктора Шейнман",
+    "link": "https://habr.com/ru/companies/onlinepatent/articles/1032200/?utm_campaign=1032200&utm_source=habrahabr&utm_medium=rss",
+    "source": "Habr Схемотехника",
+    "pubDate": "Sat, 09 May 2026 06:57:19 GMT",
+    "lang": "ru"
+  },
+  {
     "title": "Reverse-engineering the 1998 Ultima Online demo server",
     "link": "https://hackaday.com/2026/05/08/reverse-engineering-the-1998-ultima-online-demo-server/",
-    "pubDate": "Sat, 09 May 2026 05:00:55 +0000",
     "source": "Hackaday",
-    "lang": "en",
-    "contentSnippet": "In any MMORPG, the average user will generally only encounter the client side of the system. This makes building a compatible open source version of the proprietary server into a …read more..."
+    "pubDate": "Sat, 09 May 2026 05:00:55 +0000",
+    "lang": "en"
   },
   {
     "title": "Could Your Next House be Built from Giant Lego By an Inchworm Robot?",
     "link": "https://hackaday.com/2026/05/08/could-your-next-house-be-built-from-giant-lego-by-an-inchworm-robot/",
-    "pubDate": "Sat, 09 May 2026 02:00:09 +0000",
     "source": "Hackaday",
-    "lang": "en",
-    "contentSnippet": "Well, it depends when you’re going to be househunting– if it’s anytime soon, Betteridge’s law applies, but if your time horizon is a ways further out, [Miana Smith] at MIT …read more..."
+    "pubDate": "Sat, 09 May 2026 02:00:09 +0000",
+    "lang": "en"
   },
   {
     "title": "Win95-Tracker-CYD is a Cheap Yellow Mod Tracker with I2S",
     "link": "https://hackaday.com/2026/05/08/win95-tracker-cyd-is-a-cheap-yellow-mod-tracker-with-i2s/",
+    "source": "Hackaday",
     "pubDate": "Fri, 08 May 2026 23:00:48 +0000",
-    "source": "Hackaday",
-    "lang": "en",
-    "contentSnippet": "The Cheap Yellow Display is a great little module to start a project with, but it wouldn’t necessarily be our first choice for an audio device. That’s because the PWM …read more..."
-  },
-  {
-    "title": "Easy-ish Glitch Camera? There’s a Pi 4 That",
-    "link": "https://hackaday.com/2026/05/08/easy-ish-glitch-camera-theres-a-pi-4-that/",
-    "pubDate": "Fri, 08 May 2026 20:00:01 +0000",
-    "source": "Hackaday",
-    "lang": "en",
-    "contentSnippet": "Usually, when you want to make glitchy images with lots of colors and things, you have to poke around inside a camera and successfully circuit-bend the thing without bricking it. …read more..."
-  },
-  {
-    "title": "How Commodore Made a Sync Splitter",
-    "link": "https://hackaday.com/2026/05/08/how-commodore-made-a-sync-splitter/",
-    "pubDate": "Fri, 08 May 2026 18:30:45 +0000",
-    "source": "Hackaday",
-    "lang": "en",
-    "contentSnippet": "Recently we featured an unusual Commodore 8-bit computer on the bench of [Tynemouth Software] — a Commodore 64 in a PET case. One of the unique parts it had was …read more..."
-  },
-  {
-    "title": "Hackaday Podcast Episode 369: IR, E-Ink, and Avgas",
-    "link": "https://hackaday.com/2026/05/08/hackaday-podcast-episode-369-ir-e-ink-and-avgas/",
-    "pubDate": "Fri, 08 May 2026 17:10:29 +0000",
-    "source": "Hackaday",
-    "lang": "en",
-    "contentSnippet": "In this episode, Hackaday Editors Elliot Williams and Tom Nardi start things off by discussing the latest reason that cheap PCB fabrication isn’t quite as cheap as it once was. …read more..."
+    "lang": "en"
   },
   {
     "title": "Broadcasting GPS on the Local Network to Help Geoclue Find You",
     "link": "https://hackaday.com/2026/05/08/broadcasting-gps-on-the-local-network-to-help-geoclue-find-you/",
-    "pubDate": "Fri, 08 May 2026 15:30:39 +0000",
     "source": "Hackaday",
-    "lang": "en",
-    "contentSnippet": "Rather than having users go through the inconvenience of having to punch in their current location, an increasing number of applications and websites use location services that can pin-point the …read..."
+    "pubDate": "Fri, 08 May 2026 15:30:39 +0000",
+    "lang": "en"
   },
   {
     "title": "Почему беспилотная доставка в России все еще «не взлетела»",
     "link": "https://habr.com/ru/articles/1032154/?utm_campaign=1032154&utm_source=habrahabr&utm_medium=rss",
+    "source": "Habr Схемотехника",
     "pubDate": "Fri, 08 May 2026 15:23:08 GMT",
-    "source": "Habr Electronics",
-    "lang": "ru",
-    "contentSnippet": "Несмотря на экспертные прогнозы стократного роста рынка беспилотной доставки в течение последующего десятилетия, пока ни один крупный проект в этой области не вышел на массовую коммерциализацию. Причи..."
+    "lang": "ru"
   },
   {
     "title": "Metrology tools for wire bonded chips",
     "link": "https://www.electronicsweekly.com/news/business/metrology-tools-for-wire-bonded-chips-2026-05/",
-    "pubDate": "Fri, 08 May 2026 15:07:03 +0000",
     "source": "Electronics Weekly",
-    "lang": "en",
-    "contentSnippet": "Shrinking packaging, particularly with wire bond devices, and increasing automation, means that metrology has to adapt to meet the micro-level inspection required for reliable production lines. View M..."
+    "pubDate": "Fri, 08 May 2026 15:07:03 +0000",
+    "lang": "en"
   },
   {
     "title": "AMF60 60W plugtop AC-DC power supplies in sealed IP42 case",
     "link": "https://www.electronicsweekly.com/news/products/power-supplies/amf60-60w-plugtop-ac-dc-power-supplies-in-sealed-ip42-case-2026-05/",
-    "pubDate": "Fri, 08 May 2026 13:33:19 +0000",
     "source": "Electronics Weekly",
-    "lang": "en",
-    "contentSnippet": "XP power is introducing its AMF60 series of 60W wall-mount AC-DC power supplies for medical, home healthcare, and industrial applications. For example, they are for use in respiratory care, patient ....."
+    "pubDate": "Fri, 08 May 2026 13:33:19 +0000",
+    "lang": "en"
   },
   {
     "title": "As infrastructure becomes smarter, so does cybersecurity",
     "link": "https://www.electronicsweekly.com/news/as-infrastructure-becomes-smarter-so-does-cybersecurity-2026-05/",
-    "pubDate": "Fri, 08 May 2026 11:00:58 +0000",
     "source": "Electronics Weekly",
-    "lang": "en",
-    "contentSnippet": "The need for efficient cybersecurity in smart cities and smart grids is growing as infrastructure becomes smarter, writes Liam Critchley. Smart technology infrastructure, such as smart cities and smar..."
+    "pubDate": "Fri, 08 May 2026 11:00:58 +0000",
+    "lang": "en"
   },
   {
     "title": "Astranis raises $450m new capital for GEO spacecraft",
     "link": "https://www.electronicsweekly.com/news/business/finance/atranis-raises-450m-new-capital-for-geo-spacecraft-2026-05/",
-    "pubDate": "Fri, 08 May 2026 10:31:37 +0000",
     "source": "Electronics Weekly",
-    "lang": "en",
-    "contentSnippet": "Astranis has raised $450 million in new capital. It says it will scale operations to meet demand for spacecraft designed for geostationary orbit (GEO) and other high orbits. It brings ...\nThe post Ast..."
+    "pubDate": "Fri, 08 May 2026 10:31:37 +0000",
+    "lang": "en"
+  },
+  {
+    "title": "Radxa Rock 5 itx — Изучаем недорогую ITX плату с ARM чипом",
+    "link": "https://habr.com/ru/articles/983146/?utm_campaign=983146&utm_source=habrahabr&utm_medium=rss",
+    "source": "Habr Железо",
+    "pubDate": "Fri, 08 May 2026 10:06:07 GMT",
+    "lang": "ru"
   },
   {
     "title": "SatVu’s HotSat-2 First Light images examine strategic energy sites",
     "link": "https://www.electronicsweekly.com/news/satvus-hotsat-2-first-light-images-examine-strategic-energy-sites-2026-05/",
+    "source": "Electronics Weekly",
     "pubDate": "Fri, 08 May 2026 09:36:30 +0000",
-    "source": "Electronics Weekly",
-    "lang": "en",
-    "contentSnippet": "SatVu, the UK thermal imagery specialist, is releasing the first imagery from its latest LEO satellite, HotSat-2, which was launched in March 2026. Its mid Wave Infra-Red (MWIR) thermal imaging ...\nTh..."
-  },
-  {
-    "title": "China is closing AI gap, says Schmidt",
-    "link": "https://www.electronicsweekly.com/news/business/china-is-closing-ai-gap-says-schmidt-2026-05/",
-    "pubDate": "Fri, 08 May 2026 08:34:45 +0000",
-    "source": "Electronics Weekly",
-    "lang": "en",
-    "contentSnippet": "Former Google chief, Eric Schmidt has slashed his estimate of the AI gap between the West and China to just six months, writes Paul Dempsey from Washington DC. He also ...\nThe post China is closing AI..."
+    "lang": "en"
   },
   {
     "title": "Создаем I2C Master Controller на Verilog. Тестируем ядро",
     "link": "https://habr.com/ru/companies/beget/articles/1024342/?utm_campaign=1024342&utm_source=habrahabr&utm_medium=rss",
+    "source": "Habr Схемотехника",
     "pubDate": "Fri, 08 May 2026 07:05:02 GMT",
-    "source": "Habr Electronics",
-    "lang": "ru",
-    "contentSnippet": "По результатам написания прошлой статьи у нас получился объемный модуль для реализации функций низкоуровневого управления шиной I2C, который формирует управление линиями SCL/SDA, поддерживает монитори..."
+    "lang": "ru"
   },
   {
     "title": "От конфигуратора до AI: как обновили софт Wiren Board",
     "link": "https://habr.com/ru/companies/wirenboard/articles/1032634/?utm_campaign=1032634&utm_source=habrahabr&utm_medium=rss",
+    "source": "Habr Схемотехника",
     "pubDate": "Fri, 08 May 2026 07:00:59 GMT",
-    "source": "Habr Electronics",
-    "lang": "ru",
-    "contentSnippet": "Во время WBCE 2026 специалисты Wiren Board прочитали два доклада — про железо и про софт. В этой статье разберем второй — про новинки в софте. Для тех, кто никогда не слышал — Wiren Board производит о..."
-  },
-  {
-    "title": "DigiKey signs Morse Micro",
-    "link": "https://www.electronicsweekly.com/news/business/digikey-signs-morse-micro-2026-05/",
-    "pubDate": "Fri, 08 May 2026 05:27:47 +0000",
-    "source": "Electronics Weekly",
-    "lang": "en",
-    "contentSnippet": "Morse Micro, the Wi-Fi HaLow specialist, has signed a distribution partnership with DigiKey. The partnership expands global access to Morse Micro’s Wi-Fi HaLow products, making it easier for engineers..."
+    "lang": "ru"
   },
   {
     "title": "SiPearl and Semidynamics to develop rack-scale platform for cloud-based inference",
     "link": "https://www.electronicsweekly.com/news/business/sipearl-and-semidynamics-to-develop-rack-scale-platform-for-cloud-based-inference-2026-05/",
-    "pubDate": "Fri, 08 May 2026 05:25:56 +0000",
     "source": "Electronics Weekly",
-    "lang": "en",
-    "contentSnippet": "SiPearl, the Euro-processor startup, and Semidynamics, the Spanish RISC IC designer, are to co-develop a European rack‑scale AI compute platform for large‑scale AI inference in the cloud. SiPearl’s Ar..."
+    "pubDate": "Fri, 08 May 2026 05:25:56 +0000",
+    "lang": "en"
   },
   {
     "title": "Keysight and Catarc hook up to drive EV charging technology",
     "link": "https://www.electronicsweekly.com/news/business/keysight-and-catarc-hook-up-to-drive-ev-charging-technology-2026-05/",
+    "source": "Electronics Weekly",
     "pubDate": "Fri, 08 May 2026 05:20:27 +0000",
-    "source": "Electronics Weekly",
-    "lang": "en",
-    "contentSnippet": "Keysight Technologies and China Automotive Technology and Research Center (CATARC) New Energy Vehicle Inspection Center have set up a joint innovation laboratory for charging test echnology. This coll..."
-  },
-  {
-    "title": "Korea cleans up",
-    "link": "https://www.electronicsweekly.com/news/business/korea-cleans-up-2026-05/",
-    "pubDate": "Fri, 08 May 2026 05:20:07 +0000",
-    "source": "Electronics Weekly",
-    "lang": "en",
-    "contentSnippet": "Korea’s current account surplus hit a record $37.3bn in March thanks to chip exports, which rose 150%, says the Bank of Korea. It substantially beat February’s $23.2bn, which was also ...\nThe post Kor..."
+    "lang": "en"
   },
   {
     "title": "Российский Альянс RISC-V: четыре двигателя экосистемы открытой архитектуры",
     "link": "https://habr.com/ru/companies/riscvalliance/articles/1032524/?utm_campaign=1032524&utm_source=habrahabr&utm_medium=rss",
+    "source": "Habr Схемотехника",
     "pubDate": "Thu, 07 May 2026 14:51:46 GMT",
-    "source": "Habr Electronics",
-    "lang": "ru",
-    "contentSnippet": "Представьте, что вы строите продукт на процессоре, а ключевые правила игры задает один владелец архитектуры. Хотите выпустить свой совместимый чип, добавить нужные расширения или просто не хотите зави..."
+    "lang": "ru"
+  },
+  {
+    "title": "Что подорожает после оперативной памяти в 2026 году",
+    "link": "https://habr.com/ru/companies/x-com/articles/1032506/?utm_campaign=1032506&utm_source=habrahabr&utm_medium=rss",
+    "source": "Habr Железо",
+    "pubDate": "Thu, 07 May 2026 10:20:04 GMT",
+    "lang": "ru"
   },
   {
     "title": "Rice‑Tech: как фотосепарация, щадящая шлифовка и биохимия крахмала определяют качество суши‑риса",
     "link": "https://habr.com/ru/articles/1032468/?utm_campaign=1032468&utm_source=habrahabr&utm_medium=rss",
+    "source": "Habr Схемотехника",
     "pubDate": "Thu, 07 May 2026 09:29:17 GMT",
-    "source": "Habr Electronics",
-    "lang": "ru",
-    "contentSnippet": "Олег Линьков, Webformula | Май 2026\nКогда я начал разбираться в производстве риса, ожидал найти аграрную архаику. Нашёл производственную систему, в которой оптическая сортировка зерна, контроль темпер..."
+    "lang": "ru"
   },
   {
     "title": "ДожDALIсь и не только: новые устройства Wiren Board с WBCE 2026",
     "link": "https://habr.com/ru/companies/wirenboard/articles/1032270/?utm_campaign=1032270&utm_source=habrahabr&utm_medium=rss",
+    "source": "Habr Схемотехника",
     "pubDate": "Thu, 07 May 2026 07:00:04 GMT",
-    "source": "Habr Electronics",
-    "lang": "ru",
-    "contentSnippet": "Во время WBCE 2026 специалисты Wiren Board выступили с двумя докладами — про софт и про железо. В этой статье разберем аппаратную часть: куда развивается платформа Wiren Board, какие новинки уже вышли..."
+    "lang": "ru"
   },
   {
     "title": "Пиратство в эпоху VHS: как Universal судилась с Sony и почему последствия этого спора мы ощущаем и в наши дни",
     "link": "https://habr.com/ru/companies/onlinepatent/articles/1032116/?utm_campaign=1032116&utm_source=habrahabr&utm_medium=rss",
+    "source": "Habr Схемотехника",
     "pubDate": "Thu, 07 May 2026 06:12:45 GMT",
-    "source": "Habr Electronics",
-    "lang": "ru",
-    "contentSnippet": "Когда вы загружаете видео на YouTube или нажимаете кнопку «запись» во время стрима, за этим стоит историческое решение Верховного суда США, принятое в 1984 году с минимальным перевесом голосов. Дело S..."
+    "lang": "ru"
   },
   {
     "title": "Двусторонний монтаж печатных плат",
     "link": "https://habr.com/ru/articles/1032352/?utm_campaign=1032352&utm_source=habrahabr&utm_medium=rss",
+    "source": "Habr Схемотехника",
     "pubDate": "Thu, 07 May 2026 05:42:47 GMT",
-    "source": "Habr Electronics",
-    "lang": "ru",
-    "contentSnippet": "Плотность монтажа. По мере того, как растет сложность электронных устройств, неуклонно повышается и плотность размещения компонентов. Уменьшение их линейных размеров не всегда является приемлемым спос..."
+    "lang": "ru"
   },
   {
     "title": "Как запускать LLM-агентов без облачных API: VPS, локальные модели и требования к железу",
     "link": "https://habr.com/ru/companies/ruvds/articles/1020394/?utm_campaign=1020394&utm_source=habrahabr&utm_medium=rss",
+    "source": "Habr Схемотехника",
     "pubDate": "Wed, 06 May 2026 07:01:05 GMT",
-    "source": "Habr Electronics",
-    "lang": "ru",
-    "contentSnippet": "LLM-агенты вроде Claude Code постепенно становятся рабочим инструментом разработчика. Но почти все они завязаны на облачные API с их ценами, лимитами и зависимостью от внешней инфраструктуры.\nПоэтому ..."
+    "lang": "ru"
   },
   {
     "title": "Минпромторг исключил бренды компьютерной электроники из перечня параллельного импорта, разбираем аналоги и влияние",
     "link": "https://habr.com/ru/articles/1031446/?utm_campaign=1031446&utm_source=habrahabr&utm_medium=rss",
+    "source": "Habr Схемотехника",
     "pubDate": "Tue, 05 May 2026 14:15:30 GMT",
-    "source": "Habr Electronics",
-    "lang": "ru",
-    "contentSnippet": "В начале мая Минпромторг решил убрать из параллельного импорта целую \"пачку\" брендов компьютерной электроники: Intel, Samsung, Kingston, Acer, Asus, HP и другие знакомые названия. То есть всё то, из ч..."
+    "lang": "ru"
+  },
+  {
+    "title": "Минпромторг исключил бренды компьютерной электроники из перечня параллельного импорта, разбираем аналоги и влияние",
+    "link": "https://habr.com/ru/articles/1031446/?utm_campaign=1031446&utm_source=habrahabr&utm_medium=rss",
+    "source": "Habr Железо",
+    "pubDate": "Tue, 05 May 2026 14:15:30 GMT",
+    "lang": "ru"
+  },
+  {
+    "title": "Google разделила свои новые ИИ-чипы на два типа: зачем это нужно",
+    "link": "https://habr.com/ru/companies/ru_mts/articles/1031688/?utm_campaign=1031688&utm_source=habrahabr&utm_medium=rss",
+    "source": "Habr Схемотехника",
+    "pubDate": "Tue, 05 May 2026 13:38:44 GMT",
+    "lang": "ru"
+  },
+  {
+    "title": "Регистрация ПАК в реестре Минцифры: требования к программной части",
+    "link": "https://habr.com/ru/articles/1031578/?utm_campaign=1031578&utm_source=habrahabr&utm_medium=rss",
+    "source": "Habr Схемотехника",
+    "pubDate": "Tue, 05 May 2026 08:49:23 GMT",
+    "lang": "ru"
+  },
+  {
+    "title": "Электроника на основе нитрида галлия: патенты в мире и в России",
+    "link": "https://habr.com/ru/companies/onlinepatent/articles/1031230/?utm_campaign=1031230&utm_source=habrahabr&utm_medium=rss",
+    "source": "Habr Схемотехника",
+    "pubDate": "Mon, 04 May 2026 13:01:29 GMT",
+    "lang": "ru"
+  },
+  {
+    "title": "Электроника на основе нитрида галлия: патенты в мире и в России",
+    "link": "https://habr.com/ru/companies/onlinepatent/articles/1031230/?utm_campaign=1031230&utm_source=habrahabr&utm_medium=rss",
+    "source": "Habr Железо",
+    "pubDate": "Mon, 04 May 2026 13:01:29 GMT",
+    "lang": "ru"
+  },
+  {
+    "title": "Xeon 6 vs EPYC Turin: почему в сервере важны не только ядра",
+    "link": "https://habr.com/ru/companies/openyard/articles/1031038/?utm_campaign=1031038&utm_source=habrahabr&utm_medium=rss",
+    "source": "Habr Железо",
+    "pubDate": "Mon, 04 May 2026 08:25:49 GMT",
+    "lang": "ru"
+  },
+  {
+    "title": "Создаем I2C Master Controller на Verilog. Переходим на новый уровень",
+    "link": "https://habr.com/ru/companies/beget/articles/1024144/?utm_campaign=1024144&utm_source=habrahabr&utm_medium=rss",
+    "source": "Habr Схемотехника",
+    "pubDate": "Mon, 04 May 2026 07:05:27 GMT",
+    "lang": "ru"
+  },
+  {
+    "title": "Обзор серверного ускорителя NVIDIA Tesla V100 16 Gb в корпусе от RTX 4090: Часть 1 — Внешний вид, установка и настройка",
+    "link": "https://habr.com/ru/articles/1030918/?utm_campaign=1030918&utm_source=habrahabr&utm_medium=rss",
+    "source": "Habr Железо",
+    "pubDate": "Sun, 03 May 2026 19:16:51 GMT",
+    "lang": "ru"
+  },
+  {
+    "title": "Бывшая звезда рынка: Altos Computer Systems",
+    "link": "https://habr.com/ru/companies/onlinepatent/articles/1030828/?utm_campaign=1030828&utm_source=habrahabr&utm_medium=rss",
+    "source": "Habr Схемотехника",
+    "pubDate": "Sun, 03 May 2026 12:00:36 GMT",
+    "lang": "ru"
+  },
+  {
+    "title": "Пять странных гаджетов весны 2026 года: клавиатура с экраном, SSD с ОС и кое-что еще",
+    "link": "https://habr.com/ru/companies/ru_mts/articles/1027312/?utm_campaign=1027312&utm_source=habrahabr&utm_medium=rss",
+    "source": "Habr Железо",
+    "pubDate": "Sun, 03 May 2026 08:11:27 GMT",
+    "lang": "ru"
+  },
+  {
+    "title": "Хронология запретов и ограничений в цифровой среде России с 2022 года",
+    "link": "https://habr.com/ru/articles/1030744/?utm_campaign=1030744&utm_source=habrahabr&utm_medium=rss",
+    "source": "Habr Железо",
+    "pubDate": "Sat, 02 May 2026 21:53:46 GMT",
+    "lang": "ru"
+  },
+  {
+    "title": "Голос для станка: как добавить интеллектуальное звуковое оповещение",
+    "link": "https://habr.com/ru/articles/1030466/?utm_campaign=1030466&utm_source=habrahabr&utm_medium=rss",
+    "source": "Habr Схемотехника",
+    "pubDate": "Sat, 02 May 2026 08:54:01 GMT",
+    "lang": "ru"
+  },
+  {
+    "title": "Процессоры становятся дороже: как ИИ влияет на доступность железа",
+    "link": "https://habr.com/ru/companies/ru_mts/articles/1029680/?utm_campaign=1029680&utm_source=habrahabr&utm_medium=rss",
+    "source": "Habr Схемотехника",
+    "pubDate": "Sat, 02 May 2026 07:10:57 GMT",
+    "lang": "ru"
+  },
+  {
+    "title": "До встречи на танцполе: роботы теперь обучаются движениям на лету и открывают для себя новый класс задач",
+    "link": "https://habr.com/ru/companies/ru_mts/articles/1027174/?utm_campaign=1027174&utm_source=habrahabr&utm_medium=rss",
+    "source": "Habr Железо",
+    "pubDate": "Fri, 01 May 2026 12:15:52 GMT",
+    "lang": "ru"
+  },
+  {
+    "title": "Палиха П-750. Последний телефон с АОН двухтысячных",
+    "link": "https://habr.com/ru/companies/timeweb/articles/1029030/?utm_campaign=1029030&utm_source=habrahabr&utm_medium=rss",
+    "source": "Habr Железо",
+    "pubDate": "Fri, 01 May 2026 08:05:51 GMT",
+    "lang": "ru"
+  },
+  {
+    "title": "Сколько памяти нужно для жизни: стресс-тест старого и нового железа",
+    "link": "https://habr.com/ru/companies/selectel/articles/1030298/?utm_campaign=1030298&utm_source=habrahabr&utm_medium=rss",
+    "source": "Habr Железо",
+    "pubDate": "Fri, 01 May 2026 08:01:50 GMT",
+    "lang": "ru"
   }
 ]
