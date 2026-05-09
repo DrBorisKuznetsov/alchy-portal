@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
-  Cpu,
   Menu,
   X,
   CirclePlay,
@@ -13,6 +12,7 @@ import {
   ExternalLink,
   Zap,
 } from 'lucide-react';
+import logo from '../../assets/logo.png';
 import './Header.css';
 
 const navItems = [
@@ -48,7 +48,7 @@ export default function Header() {
         {/* Logo */}
         <Link to="/" className="header__logo" id="logo-link">
           <div className="header__logo-icon">
-            <Cpu size={24} />
+            <img src={logo} alt="ALCHY Logo" />
           </div>
           <span className="header__logo-text">ALCHY</span>
           <span className="header__logo-badge">PORTAL</span>
