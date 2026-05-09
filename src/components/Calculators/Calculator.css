@@ -146,10 +146,10 @@
 }
 
 .viz-chart {
-  background: rgba(0, 0, 0, 0.2);
+  background: #0a0a0a;
   border-radius: 15px;
-  padding: 1rem;
-  border: 1px solid var(--border-color);
+  padding: 1rem 1rem 0.5rem 0.5rem;
+  border: 1px solid #333;
 }
 
 .viz-footer {

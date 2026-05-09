@@ -145,24 +145,25 @@ export default function RCFilter() {
               <AreaChart data={chartData} margin={{ top: 10, right: 10, left: -20, bottom: 0 }}>
                 <defs>
                   <linearGradient id="colorGain" x1="0" y1="0" x2="0" y2="1">
-                    <stop offset="5%" stopColor="var(--primary)" stopOpacity={0.3}/>
-                    <stop offset="95%" stopColor="var(--primary)" stopOpacity={0}/>
+                    <stop offset="5%" stopColor="#00d4ff" stopOpacity={0.3}/>
+                    <stop offset="95%" stopColor="#00d4ff" stopOpacity={0}/>
                   </linearGradient>
                 </defs>
-                <CartesianGrid strokeDasharray="3 3" stroke="rgba(255,255,255,0.05)" vertical={false} />
+                <CartesianGrid strokeDasharray="3 3" stroke="#333" vertical={false} />
                 <XAxis 
                   dataKey="frequency" 
                   hide 
                 />
                 <YAxis 
                   domain={[-40, 0]} 
-                  tick={{ fontSize: 10, fill: 'var(--text-muted)' }}
-                  axisLine={false}
-                  tickLine={false}
+                  tick={{ fontSize: 10, fill: '#888' }}
+                  axisLine={{ stroke: '#444' }}
+                  tickLine={{ stroke: '#444' }}
                 />
                 <Tooltip 
-                  contentStyle={{ backgroundColor: 'var(--card-bg)', border: '1px solid var(--border-color)', borderRadius: '8px' }}
-                  labelStyle={{ color: 'var(--text-main)' }}
+                  contentStyle={{ backgroundColor: '#1a1a1a', border: '1px solid #333', borderRadius: '8px' }}
+                  labelStyle={{ color: '#fff' }}
+                  itemStyle={{ color: '#00d4ff' }}
                   formatter={(value: any) => [`${value} дБ`, 'Усиление']}
                   labelFormatter={(label) => {
                     const d = chartData.find(i => i.frequency === label);
@@ -172,8 +173,8 @@ export default function RCFilter() {
                 <Area 
                   type="monotone" 
                   dataKey="gain" 
-                  stroke="var(--primary)" 
-                  strokeWidth={2}
+                  stroke="#00d4ff" 
+                  strokeWidth={3}
                   fillOpacity={1} 
                   fill="url(#colorGain)" 
                   animationDuration={500}
