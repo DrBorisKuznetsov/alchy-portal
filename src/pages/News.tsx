@@ -2,8 +2,19 @@ import { motion } from 'framer-motion';
 import ReactMarkdown from 'react-markdown';
 import { Calendar, User, ExternalLink, Newspaper, MessageSquare } from 'lucide-react';
 import blogIndex from '../data/blog-index.json';
-import newsData from '../data/news.json';
+import newsDataRaw from '../data/news.json';
 import './News.css';
+
+interface NewsItem {
+  title: string;
+  summary: string;
+  link: string;
+  source: string;
+  pubDate: string;
+  lang: string;
+}
+
+const newsData = newsDataRaw as NewsItem[];
 
 export default function News() {
   return (
