@@ -106,7 +106,7 @@ export default function VideoCard({ video, index = 0, featured = false }: VideoC
                 key={tag} 
                 to={`/catalog?tag=${encodeURIComponent(tag)}`}
                 className="tag clickable-tag"
-                onClick={(e) => {
+                onClick={() => {
                   // Если мы уже в каталоге, плавно скроллим вверх
                   if (window.location.pathname === '/catalog') {
                     window.scrollTo({ top: 0, behavior: 'smooth' });

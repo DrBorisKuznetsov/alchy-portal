@@ -12,7 +12,7 @@ const videos = videosData as Video[];
 const series = seriesData as Series[];
 
 export default function Catalog() {
-   const [searchParams, setSearchParams] = useSearchParams();
+  const [searchParams] = useSearchParams();
   const initialSeries = searchParams.get('series') || '';
   const initialTag = searchParams.get('tag') || '';
 
