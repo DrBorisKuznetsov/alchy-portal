@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 import { Play, Eye, ThumbsUp, Clock, ExternalLink } from 'lucide-react';
 import type { Video } from '../../types';
 import { formatCount, formatDuration, formatDate, truncateText, getVideoUrl } from '../../utils/format';
@@ -101,7 +102,19 @@ export default function VideoCard({ video, index = 0, featured = false }: VideoC
         {video.tags.length > 0 && (
           <div className="video-card__tags">
             {video.tags.slice(0, 3).map((tag) => (
-              <span key={tag} className="tag">{tag}</span>
+              <Link 
+                key={tag} 
+                to={`/catalog?tag=${encodeURIComponent(tag)}`}
+                className="tag clickable-tag"
+                onClick={(e) => {
+                  // Если мы уже в каталоге, плавно скроллим вверх
+                  if (window.location.pathname === '/catalog') {
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                  }
+                }}
+              >
+                #{tag}
+              </Link>
             ))}
           </div>
         )}

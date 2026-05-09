@@ -1,4 +1,4 @@
-import { useState, useMemo } from 'react';
+import { useState, useMemo, useEffect } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import VideoCard from '../components/VideoCard/VideoCard';
@@ -12,12 +12,21 @@ const videos = videosData as Video[];
 const series = seriesData as Series[];
 
 export default function Catalog() {
-  const [searchParams] = useSearchParams();
+   const [searchParams, setSearchParams] = useSearchParams();
   const initialSeries = searchParams.get('series') || '';
+  const initialTag = searchParams.get('tag') || '';
 
-  const [query, setQuery] = useState('');
+  const [query, setQuery] = useState(initialTag);
   const [sortOption, setSortOption] = useState<SortOption>('newest');
   const [activeCategory, setActiveCategory] = useState(initialSeries);
+
+  useEffect(() => {
+    const tag = searchParams.get('tag');
+    if (tag) {
+      setQuery(tag);
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  }, [searchParams]);
 
   const categories = useMemo(() => {
     return [...new Set(

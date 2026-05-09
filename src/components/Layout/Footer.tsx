@@ -116,9 +116,14 @@ export default function Footer() {
             <h4 className="footer__links-title">Темы</h4>
             <div className="footer__tags">
               {footerLinks.topics.map((topic) => (
-                <span key={topic} className="tag">
+                <Link 
+                  key={topic} 
+                  to={`/catalog?tag=${encodeURIComponent(topic)}`}
+                  className="tag clickable-tag"
+                  onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+                >
                   {topic}
-                </span>
+                </Link>
               ))}
             </div>
           </div>
