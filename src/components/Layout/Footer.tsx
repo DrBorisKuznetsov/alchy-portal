@@ -7,6 +7,7 @@ import {
   Heart,
   ExternalLink,
 } from 'lucide-react';
+import logo from '../../assets/logo.png';
 import './Footer.css';
 
 const footerLinks = {
@@ -17,8 +18,8 @@ const footerLinks = {
     { label: 'Спонсорам', path: '/sponsors' },
   ],
   resources: [
-    { label: 'YouTube', href: 'https://www.youtube.com/@ALCHY_CHANNAL', icon: CirclePlay },
-    { label: 'GitHub', href: 'https://github.com/DrBorisKuznetsov', icon: Code2 },
+    { label: 'YouTube', href: 'https://www.youtube.com/@ALCHY_CHANNEL', icon: CirclePlay },
+    { label: 'GitHub', href: 'https://github.com/alchy-hub/alchy-hub.github.io', icon: Code2 },
     { label: 'Boosty', href: 'https://boosty.to', icon: Heart },
   ],
   topics: [
@@ -40,7 +41,7 @@ export default function Footer() {
           <div className="footer__brand">
             <Link to="/" className="footer__logo">
               <div className="footer__logo-icon">
-                <Cpu size={20} />
+                <img src={logo} alt="ALCHY Logo" />
               </div>
               <span className="footer__logo-text">ALCHY</span>
               <span className="footer__logo-badge">PORTAL</span>
@@ -51,7 +52,7 @@ export default function Footer() {
             </p>
             <div className="footer__socials">
               <a
-                href="https://www.youtube.com/@ALCHY_CHANNAL"
+                href="https://www.youtube.com/@ALCHY_CHANNEL"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="footer__social-link"
@@ -60,7 +61,7 @@ export default function Footer() {
                 <CirclePlay size={18} />
               </a>
               <a
-                href="https://github.com/DrBorisKuznetsov"
+                href="https://github.com/alchy-hub/alchy-hub.github.io"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="footer__social-link"

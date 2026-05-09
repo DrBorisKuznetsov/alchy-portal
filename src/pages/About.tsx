@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 import {
   Cpu, Zap, BookOpen, Users, Eye,
   CirclePlay, Code2, Heart, Mail,
-  ExternalLink, Award, Target, Lightbulb,
+  ExternalLink, Award, Target, Lightbulb, Home,
 } from 'lucide-react';
 import channelData from '../data/channel.json';
 import { formatCount } from '../utils/format';
@@ -81,7 +81,7 @@ export default function About() {
                 Наш канал подойдёт вам, если вы:
               </p>
               <ul className="about-mission__list">
-                <li><Cpu size={16} /> R&D инженер или проектировщик электроники</li>
+                <li><Home size={16} /> R&D инженер или проектировщик электроники</li>
                 <li><Zap size={16} /> Специалист по автоматизации (DCS/SCADA/I&C)</li>
                 <li><Lightbulb size={16} /> Embedded-разработчик</li>
                 <li><BookOpen size={16} /> Студент, углубляющий знания</li>
@@ -131,7 +131,7 @@ export default function About() {
           <h2 className="about-section__title">Где нас найти</h2>
           <div className="about-links">
             <a
-              href="https://www.youtube.com/@ALCHY_CHANNAL"
+              href="https://www.youtube.com/@ALCHY_CHANNEL"
               target="_blank"
               rel="noopener noreferrer"
               className="about-link glass-card"
@@ -144,7 +144,7 @@ export default function About() {
               <ExternalLink size={16} />
             </a>
             <a
-              href="https://github.com/DrBorisKuznetsov"
+              href="https://github.com/alchy-hub"
               target="_blank"
               rel="noopener noreferrer"
               className="about-link glass-card"
