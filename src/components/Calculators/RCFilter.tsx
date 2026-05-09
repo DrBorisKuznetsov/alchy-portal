@@ -9,7 +9,7 @@ import {
   AreaChart,
   Area
 } from 'recharts';
-import { Info, Share2, Zap } from 'lucide-react';
+import { Info, Share2, Zap, Send, Link as LinkIcon, Check, X } from 'lucide-react';
 import './Calculator.css';
 
 const UNITS = {
@@ -31,6 +31,21 @@ export default function RCFilter() {
   const [rUnit, setRUnit] = useState(1e3); // kΩ
   const [capacitance, setCapacitance] = useState(100);
   const [cUnit, setCUnit] = useState(1e-9); // nF
+  const [showInfo, setShowInfo] = useState(false);
+  const [copied, setCopied] = useState(false);
+
+  const handleShare = () => {
+    const url = window.location.href;
+    navigator.clipboard.writeText(url);
+    setCopied(true);
+    setTimeout(() => setCopied(null), 2000);
+  };
+
+  const handleTgShare = () => {
+    const url = window.location.href;
+    const text = "Интерактивный калькулятор RC-фильтра на ALCHY Portal";
+    window.open(`https://t.me/share/url?url=${encodeURIComponent(url)}&text=${encodeURIComponent(text)}`, '_blank');
+  };
 
   // Calculate cutoff frequency: f = 1 / (2 * pi * R * C)
   const fc = useMemo(() => {
@@ -81,12 +96,52 @@ export default function RCFilter() {
           <h2 className="calculator__title">RC Фильтр (Low Pass)</h2>
         </div>
         <div className="calculator__actions">
-          <button className="btn btn-icon" title="Инфо"><Info size={18} /></button>
-          <button className="btn btn-icon" title="Поделиться"><Share2 size={18} /></button>
+          <button 
+            className={`btn btn-icon ${showInfo ? 'active' : ''}`} 
+            onClick={() => setShowInfo(!showInfo)}
+            title="Инфо"
+          >
+            <Info size={18} />
+          </button>
+          <div className="share-group">
+            <button className="btn btn-icon" onClick={handleTgShare} title="В Telegram"><Send size={18} /></button>
+            <button className="btn btn-icon" onClick={handleShare} title="Копировать ссылку">
+              {copied ? <Check size={18} className="text-success" /> : <LinkIcon size={18} />}
+            </button>
+          </div>
         </div>
       </div>
 
       <div className="calculator__content">
+        {showInfo && (
+          <motion.div 
+            className="calculator__info-panel"
+            initial={{ opacity: 0, height: 0 }}
+            animate={{ opacity: 1, height: 'auto' }}
+            exit={{ opacity: 0, height: 0 }}
+          >
+            <div className="info-panel__content">
+              <h4>О калькуляторе RC-фильтра</h4>
+              <p>
+                Этот инструмент рассчитывает <strong>частоту среза (cutoff frequency)</strong> для пассивного однозвенного фильтра нижних частот (Low Pass Filter).
+              </p>
+              <div className="info-grid">
+                <div className="info-item">
+                  <strong>Формула:</strong>
+                  <code>fc = 1 / (2 * π * R * C)</code>
+                </div>
+                <div className="info-item">
+                  <strong>Спад:</strong>
+                  <span>-20 дБ на декаду (-6 дБ на октаву)</span>
+                </div>
+              </div>
+              <p className="mt-2 text-sm text-muted">
+                На частоте среза амплитуда выходного сигнала падает до 0.707 от входного (-3 дБ), а фазовый сдвиг составляет -45°.
+              </p>
+              <button className="info-close" onClick={() => setShowInfo(false)}><X size={16} /></button>
+            </div>
+          </motion.div>
+        )}
         <div className="calculator__inputs">
           <div className="calc-group">
             <label className="calc-label">Сопротивление (R)</label>
