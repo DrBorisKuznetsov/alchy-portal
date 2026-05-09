@@ -74,7 +74,7 @@ export default function News() {
           <aside className="news-sidebar">
             <h2 className="news-section-title">
               <Newspaper size={20} />
-              Мировые новости
+              Мировой дайджест
             </h2>
             
             <div className="external-news-list">
