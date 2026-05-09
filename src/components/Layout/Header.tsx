@@ -21,7 +21,7 @@ const navItems = [
   { path: '/catalog', label: 'Каталог', icon: BookOpen },
   { path: '/series', label: 'Серии', icon: Layers },
   { path: '/tools', label: 'Инструменты', icon: Zap },
-  { path: '/news', label: 'Новости', icon: Newspaper },
+  { path: '/news', label: 'Дайджест', icon: Newspaper },
   { path: '/about', label: 'О канале', icon: User },
 ];
 

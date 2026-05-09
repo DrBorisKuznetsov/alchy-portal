@@ -26,8 +26,8 @@ export default function News() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
         >
-          <h1 className="section-title">Бортжурнал и новости</h1>
-          <p className="section-subtitle">Авторские мысли и свежие события из мира электроники</p>
+          <h1 className="section-title">Инженерный дайджест</h1>
+          <p className="section-subtitle">Глубокая аналитика и свежие разработки от лидеров индустрии</p>
         </motion.div>
 
         <div className="news-layout">
