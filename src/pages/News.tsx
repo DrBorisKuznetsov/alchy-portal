@@ -1,7 +1,11 @@
 import { Helmet } from 'react-helmet-async';
 import { motion } from 'framer-motion';
 import ReactMarkdown from 'react-markdown';
-import { Calendar, User, ExternalLink, Newspaper, MessageSquare } from 'lucide-react';
+import { 
+  Calendar, User, ExternalLink, Newspaper, 
+  MessageSquare, Send, Link as LinkIcon, Check 
+} from 'lucide-react';
+import { useState } from 'react';
 import blogIndex from '../data/blog-index.json';
 import newsDataRaw from '../data/news.json';
 import './News.css';
@@ -18,6 +22,19 @@ interface NewsItem {
 const newsData = newsDataRaw as NewsItem[];
 
 export default function News() {
+  const [copiedId, setCopiedId] = useState<string | null>(null);
+
+  const copyToClipboard = (text: string, id: string) => {
+    navigator.clipboard.writeText(text);
+    setCopiedId(id);
+    setTimeout(() => setCopiedId(null), 2000);
+  };
+
+  const shareToTelegram = (url: string, title: string) => {
+    const tgUrl = `https://t.me/share/url?url=${encodeURIComponent(url)}&text=${encodeURIComponent(title)}`;
+    window.open(tgUrl, '_blank');
+  };
+
   return (
     <div className="news-page" id="news-page">
       <Helmet>
@@ -105,6 +122,23 @@ export default function News() {
                   <p className="news-item__date">
                     {new Date(item.pubDate).toLocaleDateString('ru-RU')}
                   </p>
+                  
+                  <div className="news-item__actions">
+                    <button 
+                      onClick={(e) => { e.preventDefault(); shareToTelegram(item.link, item.title); }}
+                      className="action-btn"
+                      title="Поделиться в Telegram"
+                    >
+                      <Send size={14} />
+                    </button>
+                    <button 
+                      onClick={(e) => { e.preventDefault(); copyToClipboard(item.link, `news-${i}`); }}
+                      className="action-btn"
+                      title="Скопировать ссылку"
+                    >
+                      {copiedId === `news-${i}` ? <Check size={14} className="text-success" /> : <LinkIcon size={14} />}
+                    </button>
+                  </div>
                   <ExternalLink size={14} className="news-item__link-icon" />
                 </motion.a>
               ))}
