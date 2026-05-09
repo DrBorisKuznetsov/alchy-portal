@@ -27,3 +27,9 @@ dist-ssr
 .env
 .env.local
 .env.*.local
+
+client_secrets.json
+token.pickle
+token.json
+*.pickle
+scripts/update_youtube_links.py
