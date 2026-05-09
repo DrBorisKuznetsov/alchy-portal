@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://alchy-hub.github.io/sitemap.xml

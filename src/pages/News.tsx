@@ -1,3 +1,4 @@
+import { Helmet } from 'react-helmet-async';
 import { motion } from 'framer-motion';
 import ReactMarkdown from 'react-markdown';
 import { Calendar, User, ExternalLink, Newspaper, MessageSquare } from 'lucide-react';
@@ -19,6 +20,10 @@ const newsData = newsDataRaw as NewsItem[];
 export default function News() {
   return (
     <div className="news-page" id="news-page">
+      <Helmet>
+        <title>Инженерный дайджест | ALCHY Portal</title>
+        <meta name="description" content="Свежие технические статьи и разработки от Analog Devices, Texas Instruments и мировых лидеров электроники на русском языке." />
+      </Helmet>
       <div className="container">
         {/* Header */}
         <motion.div 
