@@ -12,6 +12,8 @@
 
 const API_BASE = 'https://www.googleapis.com/youtube/v3';
 const CHANNEL_HANDLE = '@ALCHY_CHANNEL';
+const CHANNEL_ID = 'UCzGJ-JI4YLb4swBnw7dOrag';
+const CONTACT_EMAIL = 'alchy.office@gmail.com';
 
 // ─── Types ───────────────────────────────────────────────
 
@@ -55,6 +57,7 @@ interface YouTubeChannel {
   publishedAt: string;
   thumbnail: string;
   banner: string;
+  email: string;
 }
 
 // ─── API Helpers ─────────────────────────────────────────
@@ -83,20 +86,7 @@ async function ytFetch(endpoint: string, params: Record<string, string>): Promis
 async function fetchChannelInfo(): Promise<{ channel: YouTubeChannel; uploadsPlaylistId: string }> {
   console.log('📡 Загрузка информации о канале...');
 
-  // Search for channel by handle
-  const searchData = await ytFetch('search', {
-    part: 'snippet',
-    q: CHANNEL_HANDLE,
-    type: 'channel',
-    maxResults: '1',
-  });
-  quotaUsed += 99; // search.list costs 100 units total
-
-  if (!searchData.items?.length) {
-    throw new Error(`Канал ${CHANNEL_HANDLE} не найден`);
-  }
-
-  const channelId = searchData.items[0].snippet.channelId;
+  const channelId = CHANNEL_ID;
 
   // Get full channel details
   const channelData = await ytFetch('channels', {
@@ -118,6 +108,7 @@ async function fetchChannelInfo(): Promise<{ channel: YouTubeChannel; uploadsPla
     publishedAt: ch.snippet.publishedAt,
     thumbnail: ch.snippet.thumbnails?.high?.url || ch.snippet.thumbnails?.default?.url || '',
     banner: ch.brandingSettings?.image?.bannerExternalUrl || '',
+    email: CONTACT_EMAIL,
   };
 
   console.log(`  ✅ ${channel.title} — ${channel.subscriberCount} подписчиков, ${channel.videoCount} видео`);
@@ -233,9 +224,9 @@ async function fetchVideoDetails(videoIds: string[]): Promise<YouTubeVideo[]> {
 async function main() {
   apiKey = process.argv[2];
 
-  if (!apiKey) {
-    console.error('❌ Укажите API ключ: npx tsx scripts/fetch-videos.ts YOUR_API_KEY');
-    process.exit(1);
+  if (!apiKey || apiKey === 'undefined' || apiKey.startsWith('$') || apiKey.startsWith('%')) {
+    console.warn('⚠️ API ключ не найден или не передан. Пропуск обновления видео.');
+    process.exit(0); // Выходим без ошибки, чтобы не ломать сборку
   }
 
   console.log('');

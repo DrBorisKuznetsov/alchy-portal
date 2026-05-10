@@ -39,6 +39,7 @@ export interface ChannelInfo {
   publishedAt: string;
   thumbnail: string;
   banner?: string;
+  email: string;
 }
 
 export interface SponsorTier {

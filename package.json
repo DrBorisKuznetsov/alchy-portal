@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "npx tsx scripts/fetch-news.ts && npx tsx scripts/generate-blog-index.ts && tsc -p tsconfig.app.json && vite build",
+    "build": "npx tsx scripts/fetch-news.ts && npx tsx scripts/generate-blog-index.ts && (npx tsx scripts/fetch-videos.ts %YOUTUBE_API_KEY% || npx tsx scripts/fetch-videos.ts $YOUTUBE_API_KEY || echo 'Skipping video sync') && tsc -p tsconfig.app.json && vite build",
     "lint": "eslint .",
     "preview": "vite preview"
   },

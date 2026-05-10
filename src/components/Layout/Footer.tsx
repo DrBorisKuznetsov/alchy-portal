@@ -6,6 +6,7 @@ import {
   Heart,
   ExternalLink,
 } from 'lucide-react';
+import channelData from '../../data/channel.json';
 import logo from '../../assets/logo.png';
 import './Footer.css';
 
@@ -69,7 +70,7 @@ export default function Footer() {
                 <Code2 size={18} />
               </a>
               <a
-                href="mailto:alchy.office@gmail.com"
+                href={`mailto:${channelData.email}`}
                 className="footer__social-link"
                 aria-label="Email"
               >

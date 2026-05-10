@@ -170,7 +170,7 @@ export default function About() {
               <ExternalLink size={16} />
             </a>
             <a
-              href="mailto:contact@alchy.dev"
+              href={`mailto:${channelData.email}`}
               className="about-link glass-card"
             >
               <Mail size={24} />

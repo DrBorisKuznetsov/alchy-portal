@@ -158,7 +158,7 @@ export default function Sponsors() {
                   ))}
                 </ul>
                 <a
-                  href="mailto:contact@alchy.dev"
+                  href={`mailto:${channelData.email}`}
                   className={`btn ${tier.highlighted ? 'btn-primary' : 'btn-secondary'} sponsors-tier__btn`}
                 >
                   Обсудить
@@ -184,7 +184,7 @@ export default function Sponsors() {
               Напишите нам, и мы подберём оптимальный формат интеграции
               для вашего продукта и бюджета.
             </p>
-            <a href="mailto:contact@alchy.dev" className="btn btn-primary btn-lg">
+            <a href={`mailto:${channelData.email}`} className="btn btn-primary btn-lg">
               <Mail size={18} />
               Связаться
               <ArrowRight size={16} />
