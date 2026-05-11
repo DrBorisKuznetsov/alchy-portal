@@ -1,5 +1,21 @@
 [
   {
+    "title": "Обзор серверного ускорителя NVIDIA Tesla V100 16 Gb в корпусе от RTX 4090: Часть 2 — тестирование в бенчмарках и играх",
+    "summary": "Обзор серверного ускорителя NVIDIA Tesla V100 16 Gb в корпусе от RTX 4090: Часть 2 — тестирование в бенчмарках и играх\n Читать далее...",
+    "link": "https://habr.com/ru/articles/1033604/?utm_campaign=1033604&utm_source=habrahabr&utm_medium=rss",
+    "source": "Habr Железо",
+    "pubDate": "Sun, 10 May 2026 19:29:11 GMT",
+    "lang": "ru"
+  },
+  {
+    "title": "How it's made. Карта Морзе",
+    "summary": "Arduino для слабаков: как я собрал дешифратор Морзе на чистой логике и не сошел с ума.\nУвидел в интернете интересное устройство \"Карта Морзе\". Удобный брелок для занятия в свободно...",
+    "link": "https://habr.com/ru/articles/1033508/?utm_campaign=1033508&utm_source=habrahabr&utm_medium=rss",
+    "source": "Habr Схемотехника",
+    "pubDate": "Sun, 10 May 2026 11:50:16 GMT",
+    "lang": "ru"
+  },
+  {
     "title": "[Перевод] Электронные лампы — удивительные долгожители",
     "summary": "В течение последних десятилетий технический прогресс по большей части заключался в нахождении новых сфер применения полупроводников и разработке методов для их производства. Микрос...",
     "link": "https://habr.com/ru/companies/ruvds/articles/1033068/?utm_campaign=1033068&utm_source=habrahabr&utm_medium=rss",
@@ -13,14 +29,6 @@
     "link": "https://habr.com/ru/companies/selectel/articles/1032836/?utm_campaign=1032836&utm_source=habrahabr&utm_medium=rss",
     "source": "Habr Железо",
     "pubDate": "Sun, 10 May 2026 08:00:16 GMT",
-    "lang": "ru"
-  },
-  {
-    "title": "Как выбирать ASIC-майнер в 2026 году: методика оценки и где паспортные характеристики обманывают",
-    "summary": "Каждый раз перед обновлением парка майнинг-фермы возникает один и тот же вопрос: «А какой ASIC сейчас брать?». В сети на этот вопрос отвечают одинаково: подборкой из трёх-четырёх с...",
-    "link": "https://habr.com/ru/articles/1033390/?utm_campaign=1033390&utm_source=habrahabr&utm_medium=rss",
-    "source": "Habr Железо",
-    "pubDate": "Sat, 09 May 2026 20:05:53 GMT",
     "lang": "ru"
   },
   {
@@ -45,14 +53,6 @@
     "link": "https://habr.com/ru/companies/selectel/articles/1032540/?utm_campaign=1032540&utm_source=habrahabr&utm_medium=rss",
     "source": "Habr Схемотехника",
     "pubDate": "Sat, 09 May 2026 08:00:26 GMT",
-    "lang": "ru"
-  },
-  {
-    "title": "История создания промышленных роботов: от игрушки Билла Гриффита Тейлора до разработок Джорджа Девола и Виктора Шейнмана",
-    "summary": "Что такое робот, объяснять нет нужды. В последние сто лет, с момента появления в 1920 году самого слова «робот» в пьесе Карела Чапека «R.U.R.», пять поколений людей с раннего детст...",
-    "link": "https://habr.com/ru/companies/onlinepatent/articles/1032200/?utm_campaign=1032200&utm_source=habrahabr&utm_medium=rss",
-    "source": "Habr Схемотехника",
-    "pubDate": "Sat, 09 May 2026 06:57:19 GMT",
     "lang": "ru"
   },
   {
