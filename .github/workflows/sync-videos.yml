@@ -1,16 +1,22 @@
-name: Sync YouTube Videos
+name: Sync and Deploy
 
 on:
   schedule:
-    - cron: '0 0 * * 0' # Каждое воскресенье в полночь
+    - cron: '0 0 * * 0' # Каждое воскресенье в полночь UTC (06:00 по Иркутску)
   workflow_dispatch: # Позволяет запускать вручную
 
 permissions:
   contents: write
+  pages: write
+  id-token: write
 
 jobs:
-  sync:
+  sync-and-deploy:
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -32,14 +38,31 @@ jobs:
           npx tsx scripts/fetch-news.ts
           npx tsx scripts/generate-blog-index.ts
 
-      - name: Commit and push changes
+      - name: Commit and push updated data
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add src/data/*.json src/data/blog/*.md
           if git diff --staged --quiet; then
-            echo "No changes to commit"
+            echo "No new data to commit"
           else
             git commit -m "chore: automated weekly data sync"
             git push
           fi
+
+      - name: Build site
+        run: npx tsc -p tsconfig.app.json && npx vite build
+        env:
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: './dist'
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
