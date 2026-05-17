@@ -1,107 +1,99 @@
 [
   {
-    "title": "Обзор серверного ускорителя NVIDIA Tesla V100 16 Gb в корпусе от RTX 4090: Часть 2 — тестирование в бенчмарках и играх",
-    "summary": "Обзор серверного ускорителя NVIDIA Tesla V100 16 Gb в корпусе от RTX 4090: Часть 2 — тестирование в бенчмарках и играх\n Читать далее...",
-    "link": "https://habr.com/ru/articles/1033604/?utm_campaign=1033604&utm_source=habrahabr&utm_medium=rss",
-    "source": "Habr Железо",
-    "pubDate": "Sun, 10 May 2026 19:29:11 GMT",
-    "lang": "ru"
-  },
-  {
-    "title": "How it's made. Карта Морзе",
-    "summary": "Arduino для слабаков: как я собрал дешифратор Морзе на чистой логике и не сошел с ума.\nУвидел в интернете интересное устройство \"Карта Морзе\". Удобный брелок для занятия в свободно...",
-    "link": "https://habr.com/ru/articles/1033508/?utm_campaign=1033508&utm_source=habrahabr&utm_medium=rss",
+    "title": "Отечественный суперкартридж для старушки Mega Drive и его киллер-фичи",
+    "summary": "Ко мне в руки попал профессиональный флеш-картридж InviteDRIVE v6 MAX с поддержкой игр Sega Genesis / Mega Drive / Sega CD / Master System / 32x, разработанный широко известным в у...",
+    "link": "https://habr.com/ru/articles/1035910/?utm_campaign=1035910&utm_source=habrahabr&utm_medium=rss",
     "source": "Habr Схемотехника",
-    "pubDate": "Sun, 10 May 2026 11:50:16 GMT",
+    "pubDate": "Sat, 16 May 2026 12:46:07 GMT",
     "lang": "ru"
   },
   {
-    "title": "[Перевод] Электронные лампы — удивительные долгожители",
-    "summary": "В течение последних десятилетий технический прогресс по большей части заключался в нахождении новых сфер применения полупроводников и разработке методов для их производства. Микрос...",
-    "link": "https://habr.com/ru/companies/ruvds/articles/1033068/?utm_campaign=1033068&utm_source=habrahabr&utm_medium=rss",
+    "title": "Как сделать процессор Российским",
+    "summary": "Мы часто участвуем в дискуссиях, почему процессоры, произведенные за рубежом, могут считаться российскими. Эти дискуссии порой носят весьма обывательский и оторванный от действител...",
+    "link": "https://habr.com/ru/companies/baikalelectron/articles/1035710/?utm_campaign=1035710&utm_source=habrahabr&utm_medium=rss",
     "source": "Habr Схемотехника",
-    "pubDate": "Sun, 10 May 2026 09:01:35 GMT",
+    "pubDate": "Fri, 15 May 2026 15:00:57 GMT",
     "lang": "ru"
   },
   {
-    "title": "Framework полностью переделала свой модульный ноутбук: что изменилось за 5 лет",
-    "summary": "В 2021 году компания Framework вместо очередного тонкого ноутбука с распаянными на плате компонентами предложила модульное устройство. Его можно без проблем разобрать, починить или...",
-    "link": "https://habr.com/ru/companies/selectel/articles/1032836/?utm_campaign=1032836&utm_source=habrahabr&utm_medium=rss",
+    "title": "Регистрация на Российский форум «Микроэлектроника 2026» открыта",
+    "summary": "Регистрация на Российский форум «Микроэлектроника 2026» открыта Форум пройдет с 27 сентября по 3 октября 2026 года на традиционной площадке Научно-технологического университета «Си...",
+    "link": "https://elcomdesign.ru/uncategorized/registracziya-na-rossijskij-forum-mikroelektronika-2026-otkryta/",
+    "source": "Электронные компоненты",
+    "pubDate": "Fri, 15 May 2026 14:10:12 +0000",
+    "lang": "ru"
+  },
+  {
+    "title": "Расчет и построение повышающего DC/DC-преобразователя с мягкой коммутацией",
+    "summary": "Расчет и построение повышающего DC/DC-преобразователя с мягкой коммутацией Михаил Соколов, инженер Статья размещена в журнале «Электронные Компоненты» » №3-2026г. В статье поэтапно...",
+    "link": "https://elcomdesign.ru/uncategorized/raschet-i-postroenie-povyshayushhego-dc-dc-preobrazovatelya-s-myagkoj-kommutacziej/",
+    "source": "Электронные компоненты",
+    "pubDate": "Fri, 15 May 2026 11:35:39 +0000",
+    "lang": "ru"
+  },
+  {
+    "title": "Оверклокинг умер, да здравствует андервольтинг: как современные процессоры перестали разгонять и начали оптимизировать",
+    "summary": "Неделю назад друг собрал себе новый компьютер. Ничего экстремального: материнская плата Gigabyte B760 Gaming AX, процессор Intel Core i5-14600KF, башенный кулер, корпус с приличной...",
+    "link": "https://habr.com/ru/articles/1033494/?utm_campaign=1033494&utm_source=habrahabr&utm_medium=rss",
     "source": "Habr Железо",
-    "pubDate": "Sun, 10 May 2026 08:00:16 GMT",
+    "pubDate": "Fri, 15 May 2026 09:00:36 GMT",
     "lang": "ru"
   },
   {
-    "title": "Анонсированы диски 245 TB от Micron",
-    "summary": "Micron анонсировала поставки новых SSD 6600 ION NVMe SSD. Линейка включает в себя диски емкостью 30,72 TB, 61,44 TB 122,88 TB, а теперь она пополнилась диском  на 245.76 TB. Послед...",
-    "link": "https://habr.com/ru/companies/selectel/articles/1033100/?utm_campaign=1033100&utm_source=habrahabr&utm_medium=rss",
-    "source": "Habr Железо",
-    "pubDate": "Sat, 09 May 2026 12:00:50 GMT",
-    "lang": "ru"
-  },
-  {
-    "title": "История одной типичной ошибки: как лишний трансформатор портил линию HiPoE и что мы с этим сделали",
-    "summary": "История одной отладки и перехода в серию: как лишний трансформатор портил полезный сигнал с технологией HiPoE и что мы с этим сделали.\n Читать далее...",
-    "link": "https://habr.com/ru/articles/1033294/?utm_campaign=1033294&utm_source=habrahabr&utm_medium=rss",
+    "title": "Форвард-М. Странный домофон со странными функциями",
+    "summary": "Приветствую всех! \nПожалуй, самыми странными среди домофонов являются не какие-то раритетные экземпляры с оптическими или магнитными ключами, а «локальные» модели, выпускавшиеся од...",
+    "link": "https://habr.com/ru/companies/timeweb/articles/1033864/?utm_campaign=1033864&utm_source=habrahabr&utm_medium=rss",
     "source": "Habr Схемотехника",
-    "pubDate": "Sat, 09 May 2026 10:14:19 GMT",
+    "pubDate": "Fri, 15 May 2026 08:05:22 GMT",
     "lang": "ru"
   },
   {
-    "title": "SpaceX собирается выпускать собственные GPU",
-    "summary": "Нет, не для того, чтобы вытеснить с рынка NVIDIA, хотя в перспективе и такое возможно. Как бы то ни было, компания SpaceX неожиданно раскрыла планы по созданию собственных графичес...",
-    "link": "https://habr.com/ru/companies/selectel/articles/1032540/?utm_campaign=1032540&utm_source=habrahabr&utm_medium=rss",
-    "source": "Habr Схемотехника",
-    "pubDate": "Sat, 09 May 2026 08:00:26 GMT",
-    "lang": "ru"
-  },
-  {
-    "title": "Frequency Matters 300th Episode: RFMW Interview, Past Clips, May IMS2026/Space Issue",
-    "summary": "...",
-    "link": "https://www.microwavejournal.com/articles/45715-frequency-matters-300th-episode-rfmw-interview-past-clips-may-ims2026-space-issue",
-    "source": "Microwave Journal",
-    "pubDate": "Fri, 08 May 2026 10:00:00 -0400",
-    "lang": "en"
-  },
-  {
-    "title": "Radxa Rock 5 itx — Изучаем недорогую ITX плату с ARM чипом",
-    "summary": "Я давно мечтал о домашнем ARM-сервере. Не о маленькой платке вроде Raspberry Pi, которая хороша для экспериментов, но всегда кажется компромиссом, а о чем-то настоящем — полноценно...",
-    "link": "https://habr.com/ru/articles/983146/?utm_campaign=983146&utm_source=habrahabr&utm_medium=rss",
+    "title": "Тестируем NVIDIA HGX B300 — инференс-сервер с 8 GPU и 2,3 ТБ VRAM на DeepSeek, Qwen и MiniMax",
+    "summary": "Итак, вы внедрили ИИ в свой сервис и решили ехать в продакшен, где у вас много пользователей. Закономерно возникает вопрос — а на чем запустить инференс, чтобы и пользователи были...",
+    "link": "https://habr.com/ru/companies/selectel/articles/1035066/?utm_campaign=1035066&utm_source=habrahabr&utm_medium=rss",
     "source": "Habr Железо",
-    "pubDate": "Fri, 08 May 2026 10:06:07 GMT",
+    "pubDate": "Fri, 15 May 2026 08:00:19 GMT",
     "lang": "ru"
   },
   {
-    "title": "Rohde & Schwarz and Greenerwave Achieve Precise and Fast ESA Antenna Characterization Using Near-field Technology",
-    "summary": "In a joint measurement trial, Rohde & Schwarz and Greenerwave have demonstrated that a near-field system can record a full radiation pattern of a 50 cm Ku-Band electronically steer...",
-    "link": "https://www.microwavejournal.com/articles/45712-rohde-and-schwarz-and-greenerwave-achieve-precise-and-fast-esa-antenna-characterization-using-near-field-technology",
-    "source": "Microwave Journal",
-    "pubDate": "Thu, 07 May 2026 09:27:12 -0400",
-    "lang": "en"
+    "title": "История создания промышленных роботов: как в СССР попытались догнать Америку (и даже в чем-то преуспели)",
+    "summary": "Инженерно-изобретательская мысль работала над промышленными роботами не только в Америке. В Японии и Европе появились собственные варианты промышленных роботов, и поначалу это был...",
+    "link": "https://habr.com/ru/companies/onlinepatent/articles/1035070/?utm_campaign=1035070&utm_source=habrahabr&utm_medium=rss",
+    "source": "Habr Схемотехника",
+    "pubDate": "Fri, 15 May 2026 07:30:10 GMT",
+    "lang": "ru"
   },
   {
-    "title": "IMS2026: The RF and Microwave Event Comes to Boston, June 7–12",
-    "summary": "The 2026 IEEE International MTT Symposia (IMS2026) convenes 7-12 June 2026 at the Thomas M. Menino Convention and Exhibition Center (MCEC), bringing 500+ exhibiting companies and m...",
-    "link": "https://www.microwavejournal.com/articles/45710-ims2026-the-rf-and-microwave-event-comes-to-boston-june-712",
-    "source": "Microwave Journal",
-    "pubDate": "Wed, 06 May 2026 11:59:03 -0400",
-    "lang": "en"
+    "title": "Протокол UUCP для девушки",
+    "summary": "Дело было в девяностых годах прошлого века.\nВремя беспокойное. Страна развалилась, люди обеднели, многие пытались уехать за границу. Особенно успешно отъезды получались у девушек,...",
+    "link": "https://habr.com/ru/articles/1035350/?utm_campaign=1035350&utm_source=habrahabr&utm_medium=rss",
+    "source": "Habr Железо",
+    "pubDate": "Thu, 14 May 2026 19:40:37 GMT",
+    "lang": "ru"
   },
   {
-    "title": "Morse Micro Selects Gateworks as the First Global Design House Partner",
-    "summary": "Morse Micro announced Gateworks as the first official partner in its Design House Partner Program, marking a major milestone in the expansion of its global ecosystem for production...",
-    "link": "https://www.microwavejournal.com/articles/45709-morse-micro-selects-gateworks-as-the-first-global-design-house-partner",
-    "source": "Microwave Journal",
-    "pubDate": "Wed, 06 May 2026 11:02:37 -0400",
-    "lang": "en"
+    "title": "Сформирована программа конференции «Силовая электроника- 2026»",
+    "summary": "Сформирована программа конференции «Силовая электроника- 2026» Конференция «Силовая электроника — 2026» состоится 28 мая в Москве ПРОГРАММА КОНФЕРЕНЦИИ   Конгресс—центр отеля “Вега...",
+    "link": "https://elcomdesign.ru/uncategorized/sformirovana-programma-konferenczii-silovaya-elektronika-2026/",
+    "source": "Электронные компоненты",
+    "pubDate": "Thu, 14 May 2026 09:03:52 +0000",
+    "lang": "ru"
   },
   {
-    "title": "RTX’s Raytheon Receives Major Order for SharpSight Radars From Blue Raven",
-    "summary": "Raytheon has been awarded a contract from Blue Raven to produce 120 SharpSight radars, marking the largest single order to date for the new system and a key step in expanding its a...",
-    "link": "https://www.microwavejournal.com/articles/45708-rtxs-raytheon-receives-major-order-for-sharpsight-radars-from-blue-raven",
-    "source": "Microwave Journal",
-    "pubDate": "Wed, 06 May 2026 10:57:08 -0400",
-    "lang": "en"
+    "title": "[Перевод] Брусенцов: хакер, построивший троичную ЭВМ",
+    "summary": "Про Сетунь и Брусенцова уже было сказано:\n- Как Сетунь обогнала время и проиграла кремнию\n- Импортозамещение, которое мы потеряли: «Сетунь» — судьба первых серийных троичных компью...",
+    "link": "https://habr.com/ru/articles/1033490/?utm_campaign=1033490&utm_source=habrahabr&utm_medium=rss",
+    "source": "Habr Железо",
+    "pubDate": "Wed, 13 May 2026 15:24:18 GMT",
+    "lang": "ru"
+  },
+  {
+    "title": "Презентация исследования российского рынка электронных компонентов",
+    "summary": "Презентация исследования российского рынка электронных компонентов Дата: 28 мая 2026 года Место проведения: Москва, Измайловское шоссе д. 71, корп. 2Б, Отель «Бета» Измайлово, зал...",
+    "link": "https://elcomdesign.ru/uncategorized/prezentacziya-issledovaniya-rossijskogo-rynka-elektronnyh-komponentov/",
+    "source": "Электронные компоненты",
+    "pubDate": "Tue, 12 May 2026 16:48:05 +0000",
+    "lang": "ru"
   },
   {
     "title": "От ЭКБ до готовой продукции: российские разработки на «Электронике России» 2026",
@@ -149,38 +141,6 @@
     "link": "https://elcomdesign.ru/uncategorized/expoelectronica-2026/",
     "source": "Электронные компоненты",
     "pubDate": "Wed, 15 Apr 2026 05:21:07 +0000",
-    "lang": "ru"
-  },
-  {
-    "title": "ExpoElectronica — крупнейшая выставка электроники в России и странах ЕАЭС пройдет в Москве",
-    "summary": "ExpoElectronica 2026   ПРЕСС-РЕЛИЗ   ExpoElectronica — крупнейшая выставка электроники в России и странах ЕАЭС пройдет в Москве   С 14 по 16 апреля 2026 года в МВЦ «Крокус Экспо» (...",
-    "link": "https://elcomdesign.ru/uncategorized/expoelectronica-krupnejshaya-vystavka-elektroniki-v-rossii-i-stranah-eaes-projdet-v-moskve/",
-    "source": "Электронные компоненты",
-    "pubDate": "Sun, 12 Apr 2026 09:16:47 +0000",
-    "lang": "ru"
-  },
-  {
-    "title": "Вышел ежегодник «Живая электроника России -2026»",
-    "summary": "Вышел ежегодник «Живая электроника России -2026» В номере: Дмитрий Боднарь Нам нужно изменить свое отношение к роли и назначению микроэлектроники   Российская микроэлектроника глаз...",
-    "link": "https://elcomdesign.ru/uncategorized/vyshel-ezhegodnik-zhivaya-elektronika-rossii-2026/",
-    "source": "Электронные компоненты",
-    "pubDate": "Sun, 12 Apr 2026 09:00:04 +0000",
-    "lang": "ru"
-  },
-  {
-    "title": "Сформирована программа Всероссийской светотехнической конференции — 2026",
-    "summary": "Сформирована программа Всероссийской светотехнической конференции — 2026 PDF версия 10.04.2026 светодизайн Российский рынок светодиодные технологии Беспроводные технологии Светотех...",
-    "link": "https://elcomdesign.ru/uncategorized/sformirovana-programma-vserossijskoj-svetotehnicheskoj-konferenczii-2026/",
-    "source": "Электронные компоненты",
-    "pubDate": "Fri, 10 Apr 2026 19:12:11 +0000",
-    "lang": "ru"
-  },
-  {
-    "title": "Методы по увеличению подавления синфазного напряжения",
-    "summary": "Методы по увеличению подавления синфазного напряжения   Андрей Викторов   В статье кратко рассматриваются некоторые способы, позволяющие увеличить подавление синфазного напряжения...",
-    "link": "https://elcomdesign.ru/uncategorized/metody-po-uvelicheniyu-podavleniya-sinfaznogo-napryazheniya/",
-    "source": "Электронные компоненты",
-    "pubDate": "Thu, 09 Apr 2026 18:11:22 +0000",
     "lang": "ru"
   }
 ]
